@@ -27,12 +27,21 @@ Text 2 - "I live in Chesham, it is a lovely town. In Chesham there are lovely co
 | :----: |
 | Text 2 |
 
-**Output:**  
-Word: I, Sentence: I live in Chesham, it is a lovely town.\n  
-Word: Chesham, Sentence: I live in Chesham, it is a lovely town.\n  
-Word: In, Sentence: In Chesham there are lovely coffee shops like the Tavern.\n  
-Word: Chesham, Sentence: In Chesham there are lovely coffee shops like the Tavern.\n  
-Word: Tavern, Sentence: In Chesham there are lovely coffee shops like the Tavern.
+**Output:**
+
+```
+{
+    "capitalized_words": {
+
+        "Sentence": "I live in Chesham, it is a lovely town.",
+        "Words": "I, Chesham",
+    },
+    {
+        "Sentence": "In Chesham there are lovely coffee shops like the Tavern.",
+        "Words": "In, Chesham, Tavern",
+    }
+}
+```
 
 > The ideal lenght of a sentence is 20 words.  
 > Find sentences where the length is higher that 20 words.  
