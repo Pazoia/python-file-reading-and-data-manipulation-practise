@@ -34,11 +34,11 @@ Text 2 - "I live in Chesham, it is a lovely town. In Chesham there are lovely co
     "capitalized_words": {
 
         "Sentence": "I live in Chesham, it is a lovely town.",
-        "Words": "I, Chesham",
+        "Words": ["I", "Chesham"],
     },
     {
         "Sentence": "In Chesham there are lovely coffee shops like the Tavern.",
-        "Words": "In, Chesham, Tavern",
+        "Words": ["In", "Chesham", "Tavern"],
     }
 }
 ```
@@ -53,8 +53,16 @@ Text 3 - "I live in Chesham, it is a lovely town and in Chesham there are lovely
 | :----: |
 | Text 3 |
 
-**Output:**  
-Word Count: 26, Sentence: I live in Chesham, it is a lovely town and in Chesham there are lovely coffee shops like the Tavern that serve delicious food and drinks.
+**Output:**
+
+```
+{
+    "very_long_sentences": {
+        "sentence": "I live in Chesham, it is a lovely town and in Chesham there are lovely coffee shops like the Tavern that serve delicious food and drinks.",
+        "word_count": 26,
+    },
+}
+```
 
 # Technologies
 
