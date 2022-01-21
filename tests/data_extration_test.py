@@ -11,5 +11,3 @@ def test_get_data_from_file_returns_data():
         result = data_extraction.get_data_from_file("test_filename")
     
     assert result == "Some data returned"
-        
-    
